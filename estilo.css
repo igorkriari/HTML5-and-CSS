@@ -10,6 +10,7 @@ p{
 html {
     margin: 5%;
     margin-top: 1%;
+    font-family: 'Roboto', sans-serif;
 }
 div {
     margin: 10%;
@@ -27,4 +28,20 @@ body{
 #Bars li{
     list-style: none;
     display: inline-block;
+}
+.test{
+   
+    background-color: rgb(169, 255, 135);
+    font-weight: 600;
+    height:50px;
+    width:100px;
+    border-radius: 8px;
+    transition: 400ms;
+    border: 0;
+}
+.test:hover{ /* quando passa o mouse em cima, a cor do botão muda! */
+    background-color: rgb(199, 255, 177);
+}
+video{
+    border-radius: 8px;
 }
