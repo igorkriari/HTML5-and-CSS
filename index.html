@@ -4,14 +4,35 @@
 <!-- Professor, fui atualizando a página de acordo com o que foi ensinado nas aulas, coloquei audio e video pra testar também, só quis definir uma margem e trocar algumas cores, então usei conteúdo CSS, espero que não se importe pois você ainda não seu este conteúdo -->
 
 <html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="CV">
-    <title>Igor Carneiro</title>
-    <link type="text/css" rel=stylesheet href="estilo.css"> <!-- estilo CSS externo, se aplicam a todas as tags -->
-    <style>h2{color:darkslategrey}</style> <!-- estilo CSS interno, se aplicam a todas as tags -->
+     <head>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="CV">
+        <title>Igor Carneiro</title>
+        <link type="text/css" rel=stylesheet href="estilo.css"> <!-- estilo CSS externo, se aplicam a todas as tags -->
+        <style>h2{color:darkslategrey}</style> <!-- estilo CSS interno, se aplicam a todas as tags -->
+
+        <!--maneiras diferentes de exibir favicon dependendo da plataforma de acesso-->
+        <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+        <link rel="manifest" href="icon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
     </head>
-<body>
+    <body>
 
     <h1 style="color:black">  <!-- estilo CSS inline -->
         <h1 style="text-align:center">
@@ -23,9 +44,9 @@
         </p>
         <hr>
 
-    <p style="text-align:center"><img src="eu.jpeg" width="300" height="300" alt="Igor de Freitas Carneiro da Silva"></p>
+    <p style="text-align:center"><img src="eu.jpeg" width="300" height="300" title="PixelArt me!"></p>
 
-<p style="text-align: center"> <audio controls> <source src="tag.mp3" type="audio/mp3"> </audio></p>
+<p style="text-align: center" title="Tag Shai - Shadowland"> <audio controls> <source src="tag.mp3" type="audio/mp3"> </audio></p>
 
     <h2 id=Contacts>Contact</h2>
     <pre> 
@@ -34,19 +55,15 @@
     Estrada de Camorim 173, Bloco 1, Apt 607
     Rio de Janeiro - RJ 22780-070</pre>
 
-    <p class="btn-group">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="window.location.href = 'https://github.com/igorkriari';">GitHub</button>
-        <button  onclick="window.location.href = 'https://www.linkedin.com/in/igor-carneiro/';">LinkedIn </button>
-        <a href="eu2.jpeg" title="Em preto e branco" target="_blank">theRealMe</a>
-    </p>
-   
+    <div id="Bars">
+        <style>div {margin:0; margin-left: 29px;}</style>
+        <li><form action="https://www.linkedin.com/in/igor-carneiro/" method="get" target="_blank">
+        <button type="submit">LinkedIn</button></form></li>
+        <li><form action="https://github.com/igorkriari" method="get" target="_blank">
+        <button type="submit">GitHub</button></form></li>
+        <a href="eu2.jpeg" title="Black&White me!" target="_blank">theRealMe</a>
+            </div>
     <hr>
-
-    <style>
-        div {
-          margin: 50px 200px 50px;
-        }
-        </style>
 <div>
     <h2 id=Experience>Experience</h2>
         <h3>Balanceado LTDA&trade;</h3>
@@ -88,7 +105,7 @@ At this Global Community Development Project (GCDP) powered by the Association I
 
 
 <p style="text-align: center"> You can find a video of the project below: </p>
-<p style="text-align: center"> <video controls> <source src="rap.mp4" type="video/mp4"> </audio></p>
+<p style="text-align: center" title="More about the project on 'Refugee Aid - My Bookshelf' Facebook page"> <video controls> <source src="rap.mp4" type="video/mp4"> </audio></p>
 
         <h3>Livraria Cultura S.A</h3>
 <p>Sales Agent<br>
@@ -124,8 +141,6 @@ Course specialized in teaching the english language for people who work offshore
     <d1><dd>Standford University</dd></d1>
     <li>Computer Hardware Repair, Maintenance and Assembly</li>
     <d1><dd>FAETEC</dd></d1>
-  </div>
-           </body>
-
-
+                </div>
+        </body>
 </html>

@@ -1,12 +1,30 @@
 p{
-    
     color: black;
     font-size: 1em;
-    
-
-}
+    }
 
 .endereco{
-    
     color:red;
+}
+
+html {
+    margin: 5%;
+    margin-top: 1%;
+}
+div {
+    margin: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+video {
+    /* override other styles to make responsive */
+    width: 100%    !important;
+    height: auto   !important;
+  }
+body{
+    text-align: justify;
+}
+#Bars li{
+    list-style: none;
+    display: inline-block;
 }
