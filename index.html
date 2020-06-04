@@ -1,166 +1,223 @@
 <!DOCTYPE html>
 
 <!-- Essa é a minha primeira página web criada no dia 05/04/2020! -->
-<!-- Professor, fui atualizando a página de acordo com o que foi ensinado nas aulas, coloquei audio e video pra testar também, só quis definir uma margem e trocar algumas cores, então usei conteúdo CSS, espero que não se importe pois você ainda não seu este conteúdo -->
+
+
+<!-- Professor, fui atualizando a página de acordo com o que foi ensinado nas aulas, porém estou aprendendo CSS e JavaScript, por mim memso também, espero que não se importe pois você ainda não deu este conteúdo. -->
 
 <html lang="pt-br">
-     <head>
-        
-        <meta charset="utf-8">
-        <meta name="description" content="CV">
-        <title>Igor Carneiro</title>
-        <link type="text/css" rel=stylesheet href="estilo.css"> 
-        <link rel="stylesheet" href="modal.css">
-        <!-- estilo CSS externo, se aplicam a todas as tags -->
+        <head>
 
-        
-        <style>h2{color:darkslategrey}</style> <!-- estilo CSS interno, se aplicam a todas as tags -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-        
-        <!--maneiras diferentes de exibir favicon dependendo da plataforma de acesso-->
-        <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-        <link rel="manifest" href="icon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+                <meta charset="utf-8">
+                <meta name="description" content="CV">
+                <title>Igor Carneiro</title>
 
-        
-    </head>
-    <body>
-        <div id="const">
+                <!-- pegando estilos CSS externos -->
+                <link type="text/css" rel="stylesheet" href="estilo.css">
+                <link rel="stylesheet" href="modal.css">
 
-    <h1 style="color:black">  <!-- estilo CSS inline -->
-        <h1 style="text-align:center">
-        IGOR DE FREITAS CARNEIRO DA SILVA</h1></h1>
-    
-        <hr>
-        <p style="text-align:center" >
-        <a href="#Contacts">Contact</a> | <a href="#Experience">Experience</a> | <a href="#Education">Education</a> | <a href="#Languages">Languages</a> | <a href="#Courses">Courses</a>
-        </p>
-        <hr>
+                <!-- fonte externa importada para o documento -->
+                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
-    <p style="text-align:center"><img src="eu.jpeg" width="300" height="300" title="PixelArt me!"></p>
+                <!--maneiras diferentes de exibir favicon dependendo da plataforma de acesso-->
+                <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+                <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+                <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+                <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+                <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+                <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+                <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+                <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+                <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+                <link rel="icon" type="image/png" sizes="192x192" href="icon/android-icon-192x192.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+                <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+                <link rel="manifest" href="icon/manifest.json">
+                <meta name="msapplication-TileColor" content="#ffffff">
+                <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+                <meta name="theme-color" content="#ffffff">
 
-<p style="text-align: center" title="Tag Shai - Shadowland"> <audio controls> <source src="tag.mp3" type="audio/mp3"> </audio></p>
+        </head>
+        <body>
+                <div id="const">
 
-    <h2 id=Contacts>Contact</h2>
-    <pre> 
+                        <h1>IGOR DE FREITAS CARNEIRO DA SILVA</h1>
+
+                        <hr>
+                        <p id="center">
+                                <a href="#Contacts">Contact</a>
+                                |
+                                <a href="#Experience">Experience</a>
+                                |
+                                <a href="#Education">Education</a>
+                                |
+                                <a href="#Languages">Languages</a>
+                                |
+                                <a href="#Courses">Courses</a>
+                        </p>
+                        <hr>
+
+                        <p id="center">
+                                <img src="eu.jpeg" width="300" height="300" title="PixelArt me!">
+                        </p>
+
+                        <p id="center" title="Tag Shai - Shadowland">
+                                <audio controls="controls">
+                                        <source src="tag.mp3" type="audio/mp3">
+                                </audio>
+                        </p>
+
+                        <h2 id="Contacts">Contact</h2>
+                        <pre> 
     +55 22 981445537
     igorkriari@gmail.com
-    Estrada de Camorim 173, Bloco 1, Apt 607
-    Rio de Janeiro - RJ 22780-070</pre>
+    estrada de camorim 173, bloco 1, apt 607
+    rio de janeiro - rj 22780-070
+</pre>
 
-    <div id="Bars">
-        <li><form action="https://www.linkedin.com/in/igor-carneiro/" method="get" target="_blank">
-                <button class="test" type="submit">LinkedIn</button></form></li>
-        <li><form action="https://github.com/igorkriari" method="get" target="_blank">
-                <button class="test" type="submit">GitHub</button></form></li>
-        <button class="test"><a href="#">The·Real·Me</a></button>
-            </div>
-    <hr>
-
-    <h2 id=Experience>Experience</h2>
-        <h3>Balanceado LTDA&trade;</h3>
-<p>Administrative Manager
-May 2019 - Present (11 months)<br>
-Rio de Janeiro Area, Brazil<br>
-I am responsible for the inspection of all the processes inside the organization. I deal with marketing strategies, accountability, customer service and people management.</p>
-        <h3>Green House</h3>
-<p>Guest Service Agent, Reservations Manager<br>
-March 2019 - April 2019 (2 months)<br>
-La Paz, Bolivia<br>
-At this volunteer job, I dealt with the reservation management of guests comingfrom abroad and everything between the check-in and check-out and thefinancial management of the hostel.</p>
-        <h3>Quantore B.V.</h3>
-<p>Logistics Agent<br>
-June 2018 - November 2018 (6 months)<br>
-Nijmegen Area, Netherlands<br>
-Quantore is a Dutch enterprise that deals with the acquisition anddistribution of Office materials.I was responsible for the verification of the weight, size and packingof goods; driving a car for goods expedition and the selection ofarticles for clients.</p>
-        <h3>Yalla Foundation</h3>
-<p>Research Intern<br>
-March 2017 - June 2017 (4 months)<br>
-Nijmegen Area, Netherlands<br>
-Yalla Foundation is an organization that supports refugees' social integration in The Netherlands.Interviewed newcomers to find patterns of cultural conflict to beovercome through policymaking and civil&nbsp;society/NGOs activism.</p>
-        <h3>Doctors Without Borders/Médecins Sans Frontières (MSF)</h3>
-<p>Fundraiser<br>
-April 2015 - December 2015 (9 months)<br>
-Rio de Janeiro e Região, Brasil<br>
-DWB is an international medical humanitarian organisation.I raised awareness and collected funds to help in the fight againstarmed conflict, epidemics, malnutrition, and natural disasters aroundthe world.</p>
-<h3>AIESEC</h3>
-<p>Gobal Community Development Programme - Income (GCDPi)Logistics &amp; Finances Manager<br>
-March 2014 - May 2015 (1 year 3 months)<br>
-Rio de Janeiro e Região, Brasil<br>
-At the Gobal Community Development Programme - Income (GCDPi) Logisticsdepartment, I managed the hosting process of volunteers in Rio de Janeiro,assessed their living conditions and transportation.
-As a Finances Manager, I took care of the organization's audit, accountabilityand balance sheets.</p>
-        <h3>American University of Beirut</h3>
-<p>Refugee Aid Project Associate<br>
-July 2014 - September 2014 (3 months)<br>
-Bar Elias, Lebanon<br>
-At this Global Community Development Project (GCDP) powered by the Association Internationale des Etudiants en Sciences Economiques etCommerciales in partnership with the Center for Civic Engagement and Community Service (CCECS) from the American University of Beirut(AUB) and the NGO Kayany Foundation, me and other 25 young socialentrepreneurs from 19 countries went to the city of Bar Elias, in Lebanon, tovolunteer at two syrian refugee camps - Al Talyany and Al Jaled. The job consisted in promoting humanitarian aid to Syrian children througheducation, health, sanitation, logistic of donations and psico-social support.</p>
-
-
-<p style="text-align: center"> You can find a video of the project below: </p>
-<p style="text-align: center" title="More about the project on 'Refugee Aid - My Bookshelf' Facebook page"> <video controls> <source src="rap.mp4" type="video/mp4"> </audio></p>
-
-        <h3>Livraria Cultura S.A</h3>
-<p>Sales Agent<br>
-December 2012 - April 2013 (5 months)<br>
-Rio de Janeiro e Região, Brasil<br>
-Livraria Cultura is a Brazilian bookstore chain fou nd ed in 19 47 b y EvaHerz in downtown São Paulo, Brazil.I was responsible for the sales of three sections in the bookstore. Iwas also responsible for the management and logistics of newspapersand magazines.</p>
-        <h3>Wise Up</h3>
-<p>English Teacher<br>
-September 2010 - November 2010 (3 months)<br>
-Campos dos Goytacazes, RJ, Brazil<br>
-Course specialized in teaching the english language for people who work offshore. At this temporary job, I was in charge of teaching english in a fast wayto people that had limited time.</p>
-    
-    <hr>
-    <h2 id=Education>Education</h2>
-        <h3>Universidade Veiga de Almeida</h3>
-    <p class="endereco">Bachelor's degree (BA), <i>Information Systems</i> (2020 - 2024)  <strong><i><u>ONGOING</u></i></p></strong>
-        <h3>Radboud Universiteit Nijmegen</h3>
-<p>Master of Science (MSc), <i>Human Geography </i> (2016 - 2017)</p>
-        <h3>Ibmec</h3>
-<p>Bachelor's degree (BA), <i>International Relations</i> (2011 - 2014)</p>
-    
-        <hr>    
-        <h2 id=Languages>Languages</h2>
-    <ol><li>Portuguese,</li> <li>English,</li> <li>Spanish,</li> <li>Dutch,</li> <li>French</li></ol>
-    
-    <hr>
-        <h2 id=Courses>Courses</h2>
-    <li>CSCU - Certified Secure Computer User</li>
-    <d1><dd>Acadi-TI</dd></d1>
-    <li>Information Technology Security (ITS)</li>
-    <d1><dd>Fundação Bradesco</dd></d1>
-    <li>Computer Science 101</li>
-    <d1><dd>Standford University</dd></d1>
-    <li>Computer Hardware Repair, Maintenance and Assembly</li>
-    <d1><dd>FAETEC</dd></d1>
-</div>
-
-        <div id="modal" class="hide">
-                <div class="content">
-                        <div class="header">
-                        <h1>The·Real·Me</h1>
-                        <a href="#">Fechar</a>
+                        <div id="Bars">
+                                <li>
+                                        <form action="https://www.linkedin.com/in/igor-carneiro/" method="get" target="_blank">
+                                                <button class="test" type="submit">LinkedIn</button>
+                                        </form>
+                                </li>
+                                <li>
+                                        <form action="https://github.com/igorkriari" method="get" target="_blank">
+                                                <button class="test" type="submit">GitHub</button>
+                                        </form>
+                                </li>
+                                <button class="test">
+                                        <a href="#">The·Real·Me</a>
+                                </button>
                         </div>
+                        <hr>
+
+                        <h2 id="Experience">Experience</h2>
+                        <h3>Balanceado LTDA&trade;</h3>
+                        <p>Administrative Manager May 2019 - Present (11 months)<br>
+                                Rio de Janeiro Area, Brazil<br>
+                                I am responsible for the inspection of all the processes inside the organization. I deal with marketing strategies, accountability, customer service and people management.
+                        </p>
+                        <h3>Green House</h3>
+                        <p>Guest Service Agent, Reservations Manager<br>
+                                March 2019 - April 2019 (2 months)<br>
+                                La Paz, Bolivia<br>
+                                At this volunteer job, I dealt with the reservation management of guests comingfrom abroad and everything between the check-in and check-out and thefinancial management of the hostel.
+                        </p>
+                        <h3>Quantore B.V.</h3>
+                        <p>Logistics Agent<br>
+                                June 2018 - November 2018 (6 months)<br>
+                                Nijmegen Area, Netherlands<br>
+                                Quantore is a Dutch enterprise that deals with the acquisition anddistribution of Office materials.I was responsible for the verification of the weight, size and packingof goods; driving a car for goods expedition and the selection ofarticles for clients.
+                        </p>
+                        <h3>Yalla Foundation</h3>
+                        <p>Research Intern<br>
+                                March 2017 - June 2017 (4 months)<br>
+                                Nijmegen Area, Netherlands<br>
+                                Yalla Foundation is an organization that supports refugees' social integration in The Netherlands.Interviewed newcomers to find patterns of cultural conflict to beovercome through policymaking and civil&nbsp;society/NGOs activism.
+                        </p>
+                        <h3>Doctors Without Borders/Médecins Sans Frontières (MSF)</h3>
+                        <p>Fundraiser<br>
+                                April 2015 - December 2015 (9 months)<br>
+                                Rio de Janeiro e Região, Brasil<br>
+                                DWB is an international medical humanitarian organisation.I raised awareness and collected funds to help in the fight againstarmed conflict, epidemics, malnutrition, and natural disasters aroundthe world.
+                        </p>
+                        <h3>AIESEC</h3>
+                        <p>Gobal Community Development Programme - Income (GCDPi)Logistics &amp; Finances Manager<br>
+                                March 2014 - May 2015 (1 year 3 months)<br>
+                                Rio de Janeiro e Região, Brasil<br>
+                                At the Gobal Community Development Programme - Income (GCDPi) Logisticsdepartment, I managed the hosting process of volunteers in Rio de Janeiro,assessed their living conditions and transportation. As a Finances Manager, I took care of the organization's audit, accountabilityand balance sheets.
+                        </p>
+                        <h3>American University of Beirut</h3>
+                        <p>Refugee Aid Project Associate<br>
+                                July 2014 - September 2014 (3 months)<br>
+                                Bar Elias, Lebanon<br>
+                                At this Global Community Development Project (GCDP) powered by the Association Internationale des Etudiants en Sciences Economiques etCommerciales in partnership with the Center for Civic Engagement and Community Service (CCECS) from the American University of Beirut(AUB) and the NGO Kayany Foundation, me and other 25 young socialentrepreneurs from 19 countries went to the city of Bar Elias, in Lebanon, tovolunteer at two syrian refugee camps - Al Talyany and Al Jaled. The job consisted in promoting humanitarian aid to Syrian children througheducation, health, sanitation, logistic of donations and psico-social support.
+                        </p>
+
+                        <p id="enter">
+                                You can find a video of the project below:
+                        </p>
+                        <p id="center" title="More about the project on 'Refugee Aid - My Bookshelf' Facebook page">
+                                <video controls="controls">
+                                        <source src="rap.mp4" type="video/mp4">
+                                </audio>
+                        </p>
+
+                        <h3>Livraria Cultura S.A</h3>
+                        <p>Sales Agent<br>
+                                December 2012 - April 2013 (5 months)<br>
+                                Rio de Janeiro e Região, Brasil<br>
+                                Livraria Cultura is a Brazilian bookstore chain fou nd ed in 19 47 b y EvaHerz in downtown São Paulo, Brazil.I was responsible for the sales of three sections in the bookstore. Iwas also responsible for the management and logistics of newspapersand magazines.
+                        </p>
+                        <h3>Wise Up</h3>
+                        <p>English Teacher<br>
+                                September 2010 - November 2010 (3 months)<br>
+                                Campos dos Goytacazes, RJ, Brazil<br>
+                                Course specialized in teaching the english language for people who work offshore. At this temporary job, I was in charge of teaching english in a fast wayto people that had limited time.
+                        </p>
+
+                        <hr>
+                        <h2 id="Education">Education</h2>
+                        <h3>Universidade Veiga de Almeida</h3>
+                        <p class="endereco">Bachelor's degree (BA),
+                                <i>Information Systems</i>
+                                (2020 - 2024)
+                                <strong>Ongoing</strong>
+                        </p>
+
+                        <h3>Radboud Universiteit Nijmegen</h3>
+                        <p>Master of Science (MSc),
+                                <i>Human Geography
+                                </i>
+                                (2016 - 2017)</p>
+                        <h3>Ibmec</h3>
+                        <p>Bachelor's degree (BA),
+                                <i>International Relations</i>
+                                (2011 - 2014)</p>
+
+                        <hr>
+                        <h2 id="Languages">Languages</h2>
+                        <ol>
+                                <li>Portuguese,</li>
+                                <li>English,</li>
+                                <li>Spanish,</li>
+                                <li>Dutch,</li>
+                                <li>French</li>
+                        </ol>
+
+                        <hr>
+                        <h2 id="Courses">Courses</h2>
+                        <li>CSCU - Certified Secure Computer User</li>
+                        <d1>
+                                <dd>Acadi-TI</dd>
+                        </d1>
+                        <li>Information Technology Security (ITS)</li>
+                        <d1>
+                                <dd>Fundação Bradesco</dd>
+                        </d1>
+                        <li>Computer Science 101</li>
+                        <d1>
+                                <dd>Standford University</dd>
+                        </d1>
+                        <li>Computer Hardware Repair, Maintenance and Assembly</li>
+                        <d1>
+                                <dd>FAETEC</dd>
+                        </d1>
+                </div>
+
+                <div id="modal" class="hide">
+                        <div class="content">
+                                <div class="header">
+                                        <h1>The·Real·Me</h1>
+                                        <a href="#">Fechar</a>
+                                </div>
                                 <div class="me">
-                                <img src="eu2.jpeg" type="image/png" alt="The·Real·Me"></p>
-                                </div>  
-        </div>
+                                        <img src="eu2.jpeg" type="image/png" alt="The·Real·Me"></p>
+                        </div>
+                </div>
 
-
-               <script src="/index.js"></script>
+                <script src="/index.js"></script>
         </body>
 </html>

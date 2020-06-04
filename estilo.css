@@ -1,14 +1,26 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0;
+}
+h1{
+    color: black;
+    text-align: center;
+}
+h2 {
+    color: darkslategrey;
+}
 p{
     color: black;
     font-size: 1em;
+    text-align: justify;
     }
-
+#center{
+    text-align: center;
+}
 .endereco{
     color:red;
-}
-
-html {
-    font-family: 'Roboto', sans-serif;
 }
 video {
     /* override other styles to make responsive */
@@ -16,7 +28,6 @@ video {
     height: auto   !important;
   }
 #const{
-    text-align: justify;
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 40px;
@@ -26,7 +37,6 @@ video {
     display: inline-block;
 }
 .test{
-   
     background-color: rgb(169, 255, 135);
     font-weight: 600;
     height:50px;
@@ -34,7 +44,6 @@ video {
     border-radius: 8px;
     transition: 400ms;
     border: 0;
-    
 }
 .test:hover{ /* quando passa o mouse em cima, a cor do botão muda! */
     background-color: rgb(199, 255, 177);
