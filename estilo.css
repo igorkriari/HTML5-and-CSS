@@ -8,22 +8,18 @@ p{
 }
 
 html {
-    margin: 5%;
-    margin-top: 1%;
     font-family: 'Roboto', sans-serif;
-}
-div {
-    margin: 10%;
-    margin-top: 2%;
-    margin-bottom: 2%;
 }
 video {
     /* override other styles to make responsive */
     width: 100%    !important;
     height: auto   !important;
   }
-body{
+#const{
     text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 40px;
 }
 #Bars li{
     list-style: none;
@@ -38,6 +34,7 @@ body{
     border-radius: 8px;
     transition: 400ms;
     border: 0;
+    
 }
 .test:hover{ /* quando passa o mouse em cima, a cor do botão muda! */
     background-color: rgb(199, 255, 177);
