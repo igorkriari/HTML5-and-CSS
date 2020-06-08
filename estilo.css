@@ -37,6 +37,7 @@ video {
     display: inline-block;
 }
 .test{
+    cursor: pointer;
     background-color: rgb(169, 255, 135);
     font-weight: 600;
     height:50px;
