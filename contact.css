@@ -57,7 +57,20 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+input[type=reset] {
+    cursor: pointer;
+    background-color: rgb(169, 255, 135);
+    font-weight: 600;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    transition: 400ms;
+    border: 0;
+}
 
+input[type=reset]:hover {
+    background-color: #45a049;
+}
 .container {
     font-family: 'Roboto', sans-serif;
     border-radius: 5px;
